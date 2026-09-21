@@ -1,0 +1,10 @@
+# Research artifacts and secrets — do not let Aider touch these
+*.csv
+*.parquet
+.env
+backup/
+out/
+data/
+__pycache__/
+*.log
+*.bak

@@ -1,0 +1,22 @@
+# Aider configuration for SMC4 research project
+
+model: deepseek/deepseek-flash
+weak-model: deepseek/deepseek-flash
+
+# CRITICAL: no auto-commits. Research history must be curated manually.
+auto-commits: false
+
+# Load project rules automatically
+read:
+  - CONVENTIONS.md
+  - RESEARCH_LOG.md
+
+# Enable auto-linting for Python
+auto-lint: true
+lint-cmd:
+  - "python: python3 -m py_compile"
+
+# Language settings
+chat-language: ru
+commit-language: en
+

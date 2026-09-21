@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Data
+data/
+*.csv
+*.parquet
+
+# Research outputs
+out/
+backup/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Aider
+.aider*
+!.aider.conf.yml
+!.aiderignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.swp
