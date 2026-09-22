@@ -221,3 +221,21 @@ Warm-up starts 2026-09-14. Control is baseline without H1. Candidate is baseline
 ```text
 run_forward_pair.sh now removes ./out/forward/control.csv and ./out/forward/candidate_h1.csv before each run. This prevents old trades from contaminating reports when a new forward run has 0 trades.
 ```
+
+## 2026-09-22 07:11 UTC — Forward pair 2026-09-15 — 2026-09-19
+
+- Version: `v50.2-h1-live`
+- Period: `2026-09-15 — 2026-09-19`
+- Command:
+```bash
+./run_forward_pair.sh
+```
+- CSV summaries:
+```text
+out/forward/control.csv: n=0, profit=$0.00
+out/forward/candidate_h1.csv: n=0, profit=$0.00
+```
+- Note:
+```text
+Warm-up starts 2026-09-14. Control is baseline without H1. Candidate is baseline with --require-prev-ldn-sweep. Zero trades in short windows is possible and should not be interpreted until control >= 30 trades and candidate H1 >= 15 trades. Stale CSVs are deleted before each run.
+```
