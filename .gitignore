@@ -29,3 +29,9 @@ venv/
 # OS
 .DS_Store
 *.swp
+
+# Aider runtime artifacts
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v4/
+.aider/
